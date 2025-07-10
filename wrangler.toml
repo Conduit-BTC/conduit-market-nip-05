@@ -1,0 +1,7 @@
+name = "conduit-market-nip-05"
+main = "index.js"
+compatibility_date = "2025-07-10"
+
+routes = [
+  "conduit.market/.well-known/nostr.json"
+]
