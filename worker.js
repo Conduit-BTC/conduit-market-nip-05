@@ -4,7 +4,8 @@ export default {
     if (url.pathname === "/.well-known/nostr.json") {
       return new Response(JSON.stringify({
         names: {
-          conduit: "npub1..."
+          aceaspades: "npub1xzrkzsrnr83vn7h0udq6tnapwpswy5equlrtkn3nu0e0anlmzynqne0qap",
+          ericfj: "npub10xvczstpwsljy7gqd2cselvrh5e6mlerep09m8gff87avru0ryqsg2g437"
         }
       }), {
         headers: {
