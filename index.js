@@ -3,7 +3,7 @@ export default {
     const url = new URL(request.url)
 
     if (url.pathname !== "/.well-known/nostr.json") {
-      return new Response("Not found", { status: 404 })
+      return new Response("Not found", { status: 404, headers: { "Access-Control-Allow-Origin": "*" } })
     }
 
     const queryName = url.searchParams.get("name")
@@ -22,7 +22,10 @@ export default {
     }
 
     return new Response(JSON.stringify({ names: result }), {
-      headers: { "Content-Type": "application/json" }
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
     })
   }
 }
