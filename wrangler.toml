@@ -3,5 +3,5 @@ main = "index.js"
 compatibility_date = "2025-07-10"
 
 routes = [
-  "my.conduit.market/.well-known/nostr.json"
+  "my.conduit.market/*"
 ]
